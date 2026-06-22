@@ -37,7 +37,7 @@ const downloadResumeBtn = document.getElementById('downloadResumeBtn');
 
 
 downloadResumeBtn.addEventListener('click', async () => {
-    const resumeURL = './resume.pdf';
+    const resumeURL = 'resume/IEEE-Volunter_Khan.pdf';
     try {
         const response = await fetch(resumeURL);
         const blob = await response.blob();
