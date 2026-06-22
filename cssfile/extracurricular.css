@@ -1,0 +1,138 @@
+.extracurricular {
+    padding: 2rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f7fbff 40%, #eaf4ff 100%);
+    width: 90%;
+    height: 120vh;
+    margin: 2rem auto;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.activity-card {
+    background-color: var(--bg-white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-8px);
+}
+
+/* Certificate Container */
+.certificate-container {
+    width: 100%;
+    height: 280px;
+    background: linear-gradient(135deg, #f0f4ff 0%, #e8f0ff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.certificate-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.activity-card:hover .certificate-image {
+    transform: scale(1.05);
+}
+
+/* Placeholder for No Certificate */
+.certificate-container.placeholder {
+    background: linear-gradient(135deg, #e8ecf5 0%, #dce5f0 100%);
+}
+
+.placeholder-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--primary-color);
+    opacity: 0.6;
+}
+
+.placeholder-icon {
+    width: 60px;
+    height: 60px;
+    stroke-width: 1.5;
+}
+
+.placeholder-text {
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+#extra-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.activity-date {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+#extra-data a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#extra-data a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+
+/* Activity Info */
+.activity-info {
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.activity-info h3 {
+    color:rgb(37, 46, 87);
+    font-size: 15px;
+    margin: 0 0 0.5rem 0;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+

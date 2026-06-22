@@ -1,0 +1,134 @@
+.mobile-content {
+    margin-top: 70px;
+    padding: 0;
+}
+
+/* ===========================
+   PROFILE SECTION
+   =========================== */
+
+.profile-section {
+    background: linear-gradient(135deg, var(--profile-bg) 0%, #0d2a50 100%);
+    padding: var(--spacing-lg) var(--spacing-sm);
+    text-align: center;
+    color: white;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.profile-image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+
+.profile-image:active {
+    transform: scale(1.05);
+}
+
+.profile-name {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #a1c5e9;
+    font-family: var(--font-display);
+    margin: var(--spacing-sm) 0 var(--spacing-xs) 0;
+}
+
+.profile-title {
+    font-size: 1rem;
+    color: #d4fded;
+    font-weight: 500;
+    margin: 0 0 var(--spacing-md) 0;
+    padding: var(--spacing-sm) 0;
+    border-radius: 50px;
+    background-color: rgba(13, 42, 80, 0.6);
+}
+
+/* Profile Contact */
+.profile-contact {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    background-color: rgba(37, 47, 63, 0.7);
+    border-radius: 10px;
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+}
+
+.contact-icon {
+    width: 32px;
+    height: 32px;
+    color: #60A5FA;
+    flex-shrink: 0;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-label {
+    font-size: 0.85rem;
+    color: #c9ecec;
+    margin: 0;
+    font-weight: 500;
+}
+
+.contact-value {
+    font-size: 0.9rem;
+    color: #a8d8f0;
+    text-decoration: none;
+    display: block;
+    word-break: break-all;
+}
+
+.contact-value:active {
+    color: white;
+}
+
+/* Profile Social */
+.profile-socials {
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: center;
+    margin: var(--spacing-md) 0;
+}
+
+.social-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #37304d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #60A5FA;
+    text-decoration: none;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+    touch-action: manipulation;
+}
+
+.social-btn:active {
+    background-color: #60A5FA;
+    color: white;
+    transform: scale(1.1);
+}
+
+.social-btn svg {
+    width: 20px;
+    height: 20px;
+}

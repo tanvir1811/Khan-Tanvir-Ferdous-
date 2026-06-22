@@ -1,0 +1,262 @@
+#profile-container{
+     position: fixed;
+     background-color: #091630;
+
+     height: 100vh;
+     width: 25%;
+}
+
+
+
+#profile-image-container{
+    height: auto;
+    width: 230px;
+    border-radius: 50%;
+    margin-left: 24%;
+    margin-right: 24%;
+    margin-top: 30%;
+     overflow: hidden;
+     margin-bottom: 3%;
+
+}
+
+#profile-img{
+    width: 100%;
+     border-radius: 50%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+#profile-img:hover{
+     transform: scale(1.1);
+
+}
+
+.name-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color:#a1c5e9;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+   
+    
+}
+
+
+#designation-container{
+    width: 55%;
+    height: 5%;
+    margin-left: 22%;
+    margin-right: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgb(13, 42, 80);
+}
+
+#designation-subtitle{
+    color: #d4fded;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+
+#email-container{
+    width: 90%;
+    height: 80px;
+    border-radius: 10px;
+    background-color: rgb(37, 47, 63);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#email-logo{
+    width: 15%;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-right: 5%;
+}
+
+#email-logo svg{
+    height: 50px;
+    width: 100%;
+    padding: 0px;
+}
+
+#email-content{
+    height: 70px;
+    width: 75%;
+    border-radius: 10px;
+    
+}
+
+#email-content h2{
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #c9ecec;
+
+}
+
+#email-content a{
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+     color: #cab4e7f1;
+     text-decoration: none;
+
+}
+
+#downloadResumeBtndesktop{
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+   display: inline-block;
+    padding: 12px 28px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #45576e, #17054e);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#downloadResumeBtndesktop:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(80, 96, 114, 0.4);
+}
+
+
+#social-link{
+    margin-top: 10%;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:#37304d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #60A5FA;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.social-icon:hover {
+    background-color: #60A5FA;
+    color: white;
+    transform: scale(1.15) translateY(-5px);
+}
+
+.social-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.about {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #ffffff 0%, #f7fbff 40%, #eaf4ff 100%);
+    height: 80vh;
+    width: 90%;
+    margin-top: 15vh;
+    margin-bottom: 0vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 1 rem;
+    line-height: 1.8;
+}
+
+
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-placeholder {
+    width: 450px;
+    height: 350px;
+    background: linear-gradient(135deg, #e8f0ff 0%, #f5f6fa 100%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition);
+}
+
+.image-placeholder:hover {
+    transform: scale(1.05);
+}
+
+.image-placeholder svg {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.slider {
+    width:  450px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}

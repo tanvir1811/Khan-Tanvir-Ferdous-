@@ -1,0 +1,117 @@
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.education-card {
+    background-color: var(--bg-white);
+    padding: var(--spacing-md);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.education-card:active {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+
+.education-header {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+}
+
+.education-icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.education-title h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 4px 0;
+    line-height: 1.3;
+}
+
+.education-title p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.education-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    background: linear-gradient(135deg, #f9fbff 0%, #f5f9ff 100%);
+    border-radius: 8px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.detail-label {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.detail-value {
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.coursework {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.coursework-title {
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+}
+
+.tag {
+    display: inline-block;
+    background: linear-gradient(135deg, #e8f0ff 0%, #f0f4ff 100%);
+    color: var(--primary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.tag:active {
+    background-color: var(--primary);
+    color: white;
+    transform: scale(1.05);
+}

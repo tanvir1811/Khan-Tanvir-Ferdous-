@@ -1,0 +1,119 @@
+.mobile-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:#021130;;
+    box-shadow: var(--shadow-sm);
+    z-index: 100;
+    padding: var(--spacing-sm);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/* HAMBURGER MENU */
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--spacing-xs);
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    touch-action: manipulation;
+}
+
+.hamburger-line {
+    width: 24px;
+    height: 2.5px;
+    background-color: var(--text-dark);
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+
+.mobile-nav {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: rgb(15, 15, 63);
+    box-shadow: var(--shadow-md);
+    z-index: 99;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+}
+
+.mobile-nav.active {
+    left: 0;
+}
+
+.mobile-nav-menu {
+    list-style: none;
+    padding: var(--spacing-lg) var(--spacing-sm);
+}
+
+.mobile-nav-menu li {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.mobile-nav-link {
+    display: block;
+    padding: var(--spacing-md) var(--spacing-sm);
+    text-decoration: none;
+    color: rgb(249, 253, 211);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.mobile-nav-link:active,
+.mobile-nav-link.active {
+    color: var(--primary);
+    
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #45576e, #17054e);
+    color: white;
+    border: none;
+    padding:var(--spacing-sm);
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow-md);
+    touch-action: manipulation;
+    min-height: 30px;
+}
+
+.btn-primary:active {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
